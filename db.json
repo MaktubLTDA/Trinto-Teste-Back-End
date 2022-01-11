@@ -1,0 +1,18 @@
+{
+    "vendas": [
+        {
+            "id": 1,
+            "dt_venda": "10/01/2022",
+            "valor": 50000,
+            "id_vendedor": 1,
+            "nome_vendedor": "Luiz"
+        },
+        {
+            "id": 2,
+            "dt_venda": "11/01/2022",
+            "valor": 5.5,
+            "id_vendedor": 1,
+            "nome_vendedor": "Felipe"
+        }
+    ]
+}
