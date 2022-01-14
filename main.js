@@ -25,9 +25,21 @@ const server = restify.createServer({
     version: '1.0.0.1'
 });
 server.get('/vendas/listar', (req, resp, next) => {
-    resp.json({ messege: "Deve conter lista de usuarios" });
+    resp.json({ messege: "Deve conter lista de vendas" });
+    return next();
+});
+server.post('/vendas/criar', (req, resp, next) => {
+    resp.json({ messege: "Deve criar uma venda" });
+    return next();
+});
+server.put('/vendas/editar', (req, resp, next) => {
+    resp.json({ messege: "Deve editar uma venda" });
+    return next();
+});
+server.del('/vendas/remover', (req, resp, next) => {
+    resp.json({ messege: "Deve excluir uma venda" });
     return next();
 });
 server.listen(3000, () => {
-    console.log('API está rodando no endereço http://localhost:3000/vendas/listar');
+    console.log('API está rodando no endereço http://localhost:3000/vendas');
 });
